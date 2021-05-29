@@ -1,0 +1,33 @@
+html { 
+    box-sizing: border-box; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+#navbarNav ul{
+    align-items: flex-end;
+}
+#header{
+    background-image: url('../img/celu-fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#testimonio{
+    background-color: #f1f1f1;
+    padding: 50px 0 30px 0;
+    text-align: center;
+}
+
+.contact{
+    background-image: url('../img/smartphones.png');
+}

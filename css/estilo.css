@@ -16,8 +16,15 @@ img{
 #navbarNav ul{
     align-items: flex-end;
 }
+
+.webp #header{
+    background-image: url(../img/webp/celu-fondo.webp);
+}
+
+.no-webp #header{
+    background-image: url(../img/celu-fondo.jpg);
+}
 #header{
-    background-image: url('../img/celu-fondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -28,6 +35,9 @@ img{
     text-align: center;
 }
 
-.contact{
+.webp .contact{
+    background-image: url('../img/webp/smartphones.webp');
+}
+.no-webp .contact{
     background-image: url('../img/smartphones.png');
 }

@@ -1,8 +1,9 @@
+<!-- diseñado y hecho por Francisco M. charris C. -->
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <link rel="shortcut icon" href="img/bootstrap.png" type="image/png">
+    <link rel="shortcut icon" href="img/bootstrap.svg" type="image/svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- meta urls social networks -->
@@ -17,13 +18,22 @@
         content="primera pagina web de francisco charris hecha con boostrap,desarrollador fullstack web" />
     <!-- fin meta seo -->
     <title>pagina de francisco con bootstrap</title>
+
+    <!-- preload -->
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="crossorigin" as="style">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;700&display=swap"  as="style">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;700&display=swap" rel="stylesheet">
+
+    <!-- stilos propios -->
+    <link rel="preload" href="css/estilo.css" as="style">
     <link rel="stylesheet" href="css/estilo.css">
     <!-- scroll reveal -->
+    <link rel="preload" href="https://unpkg.com/scrollreveal"  as="script">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
@@ -60,7 +70,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="header-content-left">
-                        <img src="img/image1.png" alt="imagen de cabecera boostrap1">
+                        <picture>
+                            <source loading="lazy" srcset="img/webp/image1.webp" type="image/webp">
+                            <img loading="lazy" src="img/image1.png" alt="imagen de cabecera boostrap1">
+                        </picture>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -93,7 +106,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="info_left">
-                        <img src="img/image2.png" alt="primera pagina boostrap de fran">
+                        <picture>
+                            <source loading="lazy" srcset="img/webp/image2.webp" type="image/webp">
+                            <img loading="lazy" src="img/image2.png" alt="primera pagina boostrap de fran">
+                        </picture>
                     </div>
                 </div>
                 <div class="col-md-6 my-auto">
@@ -177,6 +193,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+        <script src="js/modernizr.js"></script>
     <script>
         // mostrar fecha ceracion
         var fecha = document.querySelector('#fecha span');
